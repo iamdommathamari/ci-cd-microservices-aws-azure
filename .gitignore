@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+*.env
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+
+# Kubernetes & Helm
+*.log
+*.tmp
+helm/release/
+
+# Docker
+*.tar
+.docker/
+docker-compose.override.yml
+
+# Jenkins
+jenkins/workspace/
+jenkins/jobs/
+*.bak
+
+# SonarQube & Reports
+sonar-report/
+dependency-check-report/
+trivy-report/
+coverage.xml
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# System
+.DS_Store
+Thumbs.db
