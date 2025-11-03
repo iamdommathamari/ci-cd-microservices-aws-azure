@@ -26,6 +26,7 @@ This project demonstrates a **complete CI/CD pipeline** for deploying a **micros
 
 ## 🧩 Project Structure
 
+```
 ci-cd-microservices-aws-azure/
 │
 ├── infrastructure/ # Terraform for AWS & Azure provisioning
@@ -36,7 +37,7 @@ ci-cd-microservices-aws-azure/
 ├── .gitignore # Ignored files
 ├── LICENSE # MIT License
 └── README.md # Documentation
-
+```
 
 ---
 
@@ -63,16 +64,17 @@ Example command:
 ```bash
 docker build -t <your-ecr-repo>/auth-service:v1 .
 docker push <your-ecr-repo>/auth-service:v1
+```
 
-🚀 Jenkins CI/CD
+## 🚀 Jenkins CI/CD
 
-Multi-branch Declarative Pipeline (Jenkinsfile)
+- Multi-branch Declarative Pipeline (Jenkinsfile)
 
-Integrated with SonarQube, Trivy, and Helm
+- Integrated with SonarQube, Trivy, and Helm
 
-Deployment environments:
+### Deployment environments:
 
-Dev → Staging → Production
+- Dev → Staging → Production
 
 To trigger:
 
