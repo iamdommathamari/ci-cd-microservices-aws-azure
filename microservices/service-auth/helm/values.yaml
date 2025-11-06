@@ -1,9 +1,10 @@
 replicaCount: 2
 
 image:
-  repository: mohithdevops/service-auth
-  tag: "latest"
-  pullPolicy: IfNotPresent
+  repository: mdrk012/service-auth
+  tag: latest
+  pullPolicy: Always
+
 
 service:
   type: ClusterIP
