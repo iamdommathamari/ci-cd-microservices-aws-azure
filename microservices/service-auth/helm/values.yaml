@@ -1,0 +1,21 @@
+replicaCount: 2
+
+image:
+  repository: mohithdevops/service-auth
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+
+env:
+  JWT_SECRET: "supersecretkey"
+
+resources:
+  limits:
+    cpu: 250m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
